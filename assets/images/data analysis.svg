@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+	 viewBox="0 0 508 508" xml:space="preserve">
+<circle style="fill:#FFD05B;" cx="254" cy="254" r="254"/>
+<path style="fill:#FFFFFF;" d="M113.2,88.8v330c0,7.6,6,13.6,13.6,13.6H334v-47.2c0-7.6,6-13.6,13.6-13.6h47.2V88.8
+	c0-7.6-6-13.6-13.6-13.6H126.8C119.2,75.6,113.2,81.6,113.2,88.8z"/>
+<path style="fill:#E6E9EE;" d="M334,432.4h47.2c7.6,0,13.6-6,13.6-13.6V372h-47.2c-7.6,0-13.6,6-13.6,13.6V432.4z"/>
+<g>
+	<path style="fill:#CED5E0;" d="M334,432.4h47.2c7.6,0,13.6-6,13.6-13.6V372L334,432.4z"/>
+	<path style="fill:#CED5E0;" d="M367.2,334H140.8c-1.2,0-2-0.8-2-2V196.8c0-1.2,0.8-2,2-2h226c1.2,0,2,0.8,2,2V332
+		C369.2,333.2,368,334,367.2,334z M142.8,330h222V198.8h-222V330z"/>
+	<rect x="140.8" y="216.8" style="fill:#CED5E0;" width="226" height="4"/>
+	<rect x="260" y="196.8" style="fill:#CED5E0;" width="4" height="135.2"/>
+	<rect x="314.8" y="196.8" style="fill:#CED5E0;" width="4" height="135.2"/>
+	<rect x="140.8" y="239.6" style="fill:#CED5E0;" width="226" height="4"/>
+	<rect x="140.8" y="262.4" style="fill:#CED5E0;" width="226" height="4"/>
+	<rect x="140.8" y="285.2" style="fill:#CED5E0;" width="226" height="4"/>
+	<rect x="140.8" y="308" style="fill:#CED5E0;" width="226" height="4"/>
+</g>
+<rect x="140.8" y="116" style="fill:#FF7058;" width="226" height="10"/>
+<rect x="140.8" y="137.6" style="fill:#84DBFF;" width="226" height="10"/>
+<rect x="140.8" y="159.6" style="fill:#E6E9EE;" width="122.8" height="10"/>
+</svg>
