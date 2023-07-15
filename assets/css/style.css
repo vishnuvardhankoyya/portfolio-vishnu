@@ -1559,7 +1559,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   /* projects and blog grid */
 
-  .project-list, .blog-posts-list { grid-template-columns: 1fr 1fr; }
+  .project-list{ grid-template-columns: 1fr 1fr; }
 
 
 
