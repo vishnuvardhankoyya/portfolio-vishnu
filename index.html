@@ -1132,10 +1132,51 @@
 
             <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
 
-            <button class="form-btn" type="submit" disabled data-form-btn>
-              <ion-icon name="paper-plane"></ion-icon>
-              <span>Send Message</span>
-            </button>
+            <!DOCTYPE html>
+                <html lang="en">
+                <head>
+                  <meta charset="UTF-8">
+                  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/5.4.0/css/ionicons.min.css">
+                  <style>
+                    /* Styling for the button */
+                    .form-btn {
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;
+                      padding: 12px 20px;
+                      font-size: 18px;
+                      font-weight: bold;
+                      text-transform: uppercase;
+                      color: #fff;
+                      background-color: #007bff;
+                      border: none;
+                      border-radius: 4px;
+                      cursor: pointer;
+                      transition: background-color 0.3s ease;
+                    }
+
+                    /* Styling for the icon inside the button */
+                    .form-btn ion-icon {
+                      margin-right: 8px;
+                      font-size: 24px;
+                    }
+
+                    /* Styling for the button when disabled */
+                    .form-btn[disabled] {
+                      background-color: #ccc;
+                      cursor: not-allowed;
+                    }
+                  </style>
+                </head>
+                <body>
+                  <button class="form-btn" type="submit" disabled data-form-btn>
+                    <ion-icon name="paper-plane"></ion-icon>
+                    <span>Send Message</span>
+                  </button>
+                </body>
+            </html>
+
 
           </form>
 
