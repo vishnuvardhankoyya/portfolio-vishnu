@@ -827,15 +827,15 @@ main {
  
  /* Apply animations */
  .skill:nth-child(odd) .title-wrapper {
-   animation: pulse 1.5s infinite alternate;
+   animation: pulse 2s infinite alternate;
  }
  
  .skill:nth-child(even) .title-wrapper {
-   animation: slideIn 1s forwards;
+   animation: slideIn 2s forwards;
  }
  
  .skill:hover .title-wrapper {
-   animation: fadeIn 0.5s ease;
+   animation: fadeIn 1s ease;
  }
  
  .skill-progress-bg {
@@ -846,9 +846,9 @@ main {
  }
  
  .skill-progress-fill {
-  background: linear-gradient(to right, yellow, rgb(245, 245, 245)); /* Replace with your gradient colors */
+  background: linear-gradient(to right, yellow, rgb(255, 123, 0)); /* Replace with your gradient colors */
   background-size: 200% 100%;
-  animation: moveGradient 3s linear infinite;
+  animation: moveGradient 4.5s linear infinite;
   height: 100%;
   border-radius: inherit;
 }
