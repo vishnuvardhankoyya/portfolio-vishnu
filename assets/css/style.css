@@ -787,39 +787,82 @@ main {
  * skills 
  */
 
-.skills-title { margin-bottom: 20px; }
+ .skills-title { margin-bottom: 20px; }
 
-.skills-list { padding: 20px; }
+ .skills-list { padding: 20px; }
+ 
+ .skills-item:not(:last-child) { margin-bottom: 15px; }
+ 
+ .skill .title-wrapper {
+   display: flex;
+   align-items: center;
+   gap: 5px;
+   margin-bottom: 8px;
+ }
+ 
+ .skill .title-wrapper data {
+   color: var(--light-gray);
+   font-size: var(--fs-7);
+   font-weight: var(--fw-300);
+ }
+ 
+ /* Pulse animation */
+ @keyframes pulse {
+   0% { transform: scale(1); }
+   50% { transform: scale(1.1); }
+   100% { transform: scale(1); }
+ }
+ 
+ /* Slide-in animation */
+ @keyframes slideIn {
+   0% { transform: translateX(-50px); opacity: 0; }
+   100% { transform: translateX(0); opacity: 1; }
+ }
+ 
+ /* Fade-in animation */
+ @keyframes fadeIn {
+   0% { opacity: 0; }
+   100% { opacity: 1; }
+ }
+ 
+ /* Apply animations */
+ .skill:nth-child(odd) .title-wrapper {
+   animation: pulse 1.5s infinite alternate;
+ }
+ 
+ .skill:nth-child(even) .title-wrapper {
+   animation: slideIn 1s forwards;
+ }
+ 
+ .skill:hover .title-wrapper {
+   animation: fadeIn 0.5s ease;
+ }
+ 
+ .skill-progress-bg {
+   background: var(--jet);
+   width: 100%;
+   height: 8px;
+   border-radius: 10px;
+ }
+ 
+ .skill-progress-fill {
+   background: var(--text-gradient-yellow);
+   height: 100%;
+   border-radius: inherit;
+ }
 
-
-.skills-item:not(:last-child) { margin-bottom: 15px; }
-
-.skill .title-wrapper {
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  margin-bottom: 8px;
+/* Apply animation to the entire data element */
+.data-animation {
+  display: inline-block;
+  opacity: 2;
+  transform: translateY(10px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
-.skill .title-wrapper data {
-  color: var(--light-gray);
-  font-size: var(--fs-7);
-  font-weight: var(--fw-300);
+.title-wrapper:hover .data-animation {
+  opacity: 2;
+  transform: translateY(0);
 }
-
-.skill-progress-bg {
-  background: var(--jet);
-  width: 100%;
-  height: 8px;
-  border-radius: 10px;
-}
-
-.skill-progress-fill {
-  background: var(--text-gradient-yellow);
-  height: 100%;
-  border-radius: inherit;
-}
-
 
 
 
