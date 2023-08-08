@@ -846,10 +846,22 @@ main {
  }
  
  .skill-progress-fill {
-   background: var(--text-gradient-yellow);
-   height: 100%;
-   border-radius: inherit;
- }
+  background: linear-gradient(to right, yellow, rgb(245, 245, 245)); /* Replace with your gradient colors */
+  background-size: 200% 100%;
+  animation: moveGradient 3s linear infinite;
+  height: 100%;
+  border-radius: inherit;
+}
+
+@keyframes moveGradient {
+  0% {
+    background-position: 0% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
 
 /* Apply animation to the entire data element */
 .data-animation {
@@ -1762,4 +1774,24 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .timeline-text { max-width: 700px; }
 
+}
+
+.avatar-box {
+  display: inline-block;
+  position: relative;
+  perspective: 1000px; /* Adjust the perspective value as needed */
+}
+
+.avatar {
+  width: 80px;
+  height: auto;
+  transition: transform 1s ease;
+}
+
+.avatar-box:hover .avatar {
+  transform: rotateY(180deg);
+}
+
+.avatar-box.initial-flip .avatar {
+  transform: rotateY(180deg);
 }
