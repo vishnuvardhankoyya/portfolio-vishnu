@@ -157,3 +157,28 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
   });
 }
+
+const titleElement = document.getElementById("swapText");
+    const phrases = ["Data science", "NIIT University"];
+    let index = 0;
+
+    function swapText() {
+      titleElement.textContent = phrases[index];
+      index = (index + 1) % phrases.length;
+    }
+
+    setInterval(swapText, 5000); // Swap every 5 seconds
+
+const socialLink = document.querySelector('.social-link');
+
+  socialLink.addEventListener('click', function(event) {
+    event.preventDefault(); // Prevent the link from navigating
+
+      // Add your animation code here
+    socialLink.style.animation = 'rotate 1s ease-in-out forwards';
+      
+      // Reset the animation after it completes
+    socialLink.addEventListener('animationend', function() {
+      socialLink.style.animation = '';
+    });
+  });
