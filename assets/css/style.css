@@ -1864,3 +1864,9 @@ textarea.form-input::-webkit-resizer { display: none; }
   transform: scale(1.2) rotate(360deg); /* Adjust the rotation angle */
   box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.3);
 }
+
+/* download resume */
+.download-resume{
+  margin-bottom: 20px;
+  color: rgb(255, 238, 0);
+}
